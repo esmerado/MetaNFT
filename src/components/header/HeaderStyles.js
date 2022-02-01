@@ -17,6 +17,16 @@ export const HeaderContainer = styled.div`
     align-items: center;
     flex-direction: column;
     height: 130vh;
+    margin-top: 1em;
+  }
+
+  @media ${breakpoints.spm} {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 170vh;
+    margin-top: 1em;
   }
 `;
 
@@ -30,7 +40,6 @@ export const HeaderP = styled.span`
   color: #ffffff;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.3em;
-  margin-top: 1em;
 `;
 
 export const CardButton = styled.button`
@@ -94,8 +103,8 @@ export const MainTextDiv = styled.div`
 
   @media ${breakpoints.sm} {
     align-items: center;
-    margin-top: -2em;
-  }
+    margin-top: 2em;
+      }
 `;
 
 export const MainTextTitle = styled.h2`

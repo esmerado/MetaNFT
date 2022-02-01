@@ -57,6 +57,10 @@ export const Article = styled.article`
     box-shadow: 3px 4px 5px rgb(0, 0, 0, 0.5);
     transform: perspective(800px) rotateY(5deg);
   }
+
+  @media ${breakpoints.spm} {
+    width: 310px;
+  }
 `;
 
 export const P = styled.p`

@@ -12,6 +12,7 @@ export const Nav = styled.header`
   z-index: 2;
   position: relative;
 
+
   @media ${breakpoints.sm} {
     align-items: center;
     justify-content: center;
@@ -58,6 +59,7 @@ export const Ul = styled.ul`
     color: #ffff;
     transition: all 0.3s ease-in-out;
     border-bottom: 1px solid rgb(255,255,255,0);
+
 
 
     :hover {
