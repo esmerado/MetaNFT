@@ -1,7 +1,7 @@
-import { Field, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
 import { useState } from "react";
-import { Article, Center, Container, Image, P } from "../../styles/globalStyles";
-import { FieldStyled } from "./SearchStyles";
+import { Article, Center, Container, Image, InputForm, P } from "../../styles/globalStyles";
+import { FieldStyled, FormStyled } from "./SearchStyles";
 
 const Search = () => {
   const [photos, setPhotos] = useState([]);
@@ -26,9 +26,9 @@ const Search = () => {
           setPhotos(data.results);
         }}
       >
-        <Form style={{marginBottom: '-3em', padding: 0}}>
+        <FormStyled style={{marginBottom: '-3em', padding: 0}}>
           <FieldStyled placeholder="Search..."s name="search" />
-        </Form>
+        </FormStyled>
       </Formik>
         <Center>
           {photos.map((x) => (
